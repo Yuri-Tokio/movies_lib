@@ -1,8 +1,19 @@
+import { Link, Outlet } from "react-router-dom"
+import "./Styles/App.css"
+
 function App() {
 
   return (
     <div className="App">
-      <h2>Olá mundo, este será um projeto sobre filmes</h2>
+      <nav id="navbar">
+        <h2>
+          <Link to="/">MoviesLib</Link>
+        </h2>
+        <Link to="/movie/1">Movie</Link>
+        <Link to="/search">Search</Link>
+      </nav>
+      <h2>Movies Lib</h2>
+      <Outlet />
     </div>
   )
 }
