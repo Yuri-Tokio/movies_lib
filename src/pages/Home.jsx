@@ -1,13 +1,10 @@
 import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
-//useState - Hook para gerenciar o estado dos filmes
-//useEffect - Hook para fazer a chamada da API quando a pagina carregar
 
 import "../Styles/MoviesGrid.css"
 
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
-// pegando chaves e valores do .env
 
 const Home = () => {
     const [topMovies, setTopMovies] = useState([]);
