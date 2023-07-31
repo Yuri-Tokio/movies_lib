@@ -14,7 +14,7 @@ const Navbar = () => {
       
       if (!search) return;
 
-        navigate(`/search?q=${search}`);
+        navigate(`/movies_lib/search?q=${search}`);
         setSearch("");
   
     };

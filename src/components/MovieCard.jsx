@@ -15,7 +15,7 @@ const MovieCard = ({ movie, showLink = true }) => {
       <p>
         <FaStar /> {average_Film.toFixed(1)}
       </p>
-      {showLink && <Link to={`/movie/${movie.id}`}>Detalhes</Link>}
+      {showLink && <Link to={`/movies_lib/movie/${movie.id}`}>Detalhes</Link>}
     </div>
   );
 };
